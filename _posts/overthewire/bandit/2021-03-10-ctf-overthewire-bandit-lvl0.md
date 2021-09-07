@@ -52,7 +52,7 @@ Ao aceitar o compartilhamento da chave, você pode acessar, super tranquilo.
 
 ## Bandit - Level 0
 
-## Bandit0 - Solução 1
+### Bandit0 - Solução 1
 
 Agora sim, dentro do nível 0, vamos procurar a __key__ para o __bandit1__. Como já sabemos que estamos no diretório __home__, vamos apenas confirmar se o arquivo está na pasta com o comando __ls__ e depois exibir utilizando __cat__ .
 
@@ -61,7 +61,7 @@ Agora sim, dentro do nível 0, vamos procurar a __key__ para o __bandit1__. Como
 > `Não sabe o que ls e cat fazem?` O __ls__ lista os conteúdos de um diretório e o __cat__ exibe o conteúdo dos arquivos em uma saída padrão. Tem diversos materiais para ensinar o básico sobre linux, como por exemplo o [Guia Foca](https://www.guiafoca.org/guiaonline/) e os manuais dos comandos, onde você pode digitar __$ man ls__ ou qualquer outro comando e conhecer mais sobre a ferramenta.
 
 
-## Bandit0 - Solução 2
+### Bandit0 - Solução 2
 
 >"No linux, só é necessário dois comandos, sendo o __cd__ e o **echo**".
 
