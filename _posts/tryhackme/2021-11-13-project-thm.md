@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[CTF]-[TRYHACKME]"
-date: 2021-11-14
+date: 2021-11-13
 excerpt: "Resolvendo os CTF's do TryHackMe.com"
 project: true
 feature: https://0xnymerio.github.io/img_posts/ctf/tryhackme/tryhackme-logo.png
