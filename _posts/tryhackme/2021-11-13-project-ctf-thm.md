@@ -5,11 +5,12 @@ date: 2021-11-13
 excerpt: "Resolvendo os CTF's do TryHackMe.com"
 project: true
 feature: https://0xnymerio.github.io/img_posts/ctf/tryhackme/tryhackme-logo.png
+tag:
 - ctf
 - tryhackme
 - thm
 - pratice
-- paths
+- path
 ---
 
 O [TryHackMe](https://tryhackme.com/) é uma plataforma online que ensina segurança cibernética por meio de laboratórios curtos e gamificados do mundo real. Há conteúdo para iniciantes e hackers experientes, incorporando guias e desafios para atender a diferentes estilos de aprendizagem.
