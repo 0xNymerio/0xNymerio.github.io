@@ -15,7 +15,6 @@ Link da [Bounty Hacker](https://tryhackme.com/room/cowboyhacker).
 >You were boasting on and on about your elite hacker skills in the bar and a few Bounty Hunters decided they'd take you up on claims! 
 >Prove your status is more than just a few glasses at the bar. I sense bell peppers & beef in your future!
 
-
 ## Execução
 
 Essa é uma máquina simples, mas é necessário entender os fundamentos pra realmente saber o que está fazendo. Como sempre, começamos por pela etapa de **Information Gathering/Scanning**.
@@ -25,6 +24,8 @@ Inicio com um Stealth Scan com o Nmap, coloquei apenas as top 400 portas para fa
 `# nmap -sS -Pn -v --top-ports=400 10.10.97.37` 
 
 ![nmap](/img_posts/ctf/tryhackme/pratice/bountyhacker/nmap_ports.png)
+
+/home/nym/Documents/github/0xNymerio.github.io
 
 Ao perceber uma porta 80 aberta, já inicio o meu **gobuster** para realizar um bruteforce nos diretórios.
 
