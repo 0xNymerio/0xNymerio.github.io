@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[CTF]-[OVERTHEWIRE]-[BANDIT]- Level - 03 "
-date: 2021-09-07
+date: 2021-11-19
 excerpt: "Bandit Level - 03 - overthewire.org"
 tags: [ctf, overthewire, bandit]
 ---
