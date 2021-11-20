@@ -25,7 +25,7 @@ Todo arquivo oculto em linux/unix começa com __.__, a fim de simbolizar que é 
 
 ### Bandit3 - Solução 2 
 
-Essa solução é mais sofisticada, mas apenas por um motivo: caso nós _não_ soubessemos onde ou qual diretório o arquivo oculto está o escondido dentro do __inhere__, poderiamos procurar recursivamente utilizando o __find__. Estou utilizando os parâmetros __name__ para determinar o começo do nome do arquivo, que no caso é **".*"**. O __.__ é por ser um arquivo oculto e o __*__ é um __wildcard__ que simboliza um numero qualquer (um ou mais) de caracteres e números.
+Essa solução é mais sofisticada, mas apenas por um motivo: caso nós _não_ soubessemos onde ou qual diretório o arquivo oculto está o escondido dentro do __inhere__, poderiamos procurar recursivamente utilizando o __find__. Estou utilizando os parâmetros __name__ para determinar o começo do nome do arquivo, que no caso é ***".*"**. O __.__ é por ser um arquivo oculto e o __*__ é um __wildcard__ que simboliza um numero qualquer (um ou mais) de caracteres e números.
 
 > $ cat spaces\ in\ this\ filename
 
