@@ -20,7 +20,7 @@ A solução mais simples é digitar o inicio do nome do arquivo e utilizar o bot
 
 ### Bandit2 - Solução 2 
 
-Em um shell que não possui interação, utilizar o caractere __\__ para realizar o escape dos espaços e conseguir digitar o nome do arquivo.
+Em um shell que não possui interação, utilizar o caractere \ para realizar o escape dos espaços e conseguir digitar o nome do arquivo.
 
 > $ cat spaces\ in\ this\ filename
 
