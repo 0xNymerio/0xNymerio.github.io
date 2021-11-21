@@ -27,6 +27,6 @@ Todo arquivo oculto em linux/unix começa com __.__ (ponto), a fim de simbolizar
 
 Essa solução é mais sofisticada, mas apenas por um motivo: caso nós _não_ soubessemos onde ou qual diretório o arquivo oculto está o escondido dentro do __inhere__, poderiamos procurar recursivamente utilizando o __find__. Estou utilizando os parâmetros __name__ para determinar o começo do nome do arquivo, que no caso é ".*" . O ponto __.__ é por ser um arquivo oculto e o __*__ é um __wildcard__ que simboliza um numero qualquer de caracteres e números.
 
-> $ cat spaces\ in\ this\ filename
+> $ find inhere\ -name ".*" -print
 
-![Utilizando find \\](/img_posts/ctf/overthewire/bandit/lvl3/lvl3-1.png)
+![Utilizando find \\](/img_posts/ctf/overthewire/bandit/lvl3/lvl3-2.png)
