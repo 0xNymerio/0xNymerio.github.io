@@ -25,8 +25,6 @@ Inicio com um Stealth Scan com o Nmap, coloquei apenas as top 400 portas para fa
 
 ![nmap](/img_posts/ctf/tryhackme/pratice/bountyhacker/nmap_ports.png)
 
-/home/nym/Documents/github/0xNymerio.github.io
-
 Ao perceber uma porta 80 aberta, já inicio o meu **gobuster** para realizar um bruteforce nos diretórios.
 
 `# gobuster dir -e -u http://10.10.97.37/ -w /usr/share/wordlists/dirb/small.txt`
