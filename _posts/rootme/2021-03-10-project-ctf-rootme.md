@@ -25,6 +25,8 @@ Nessa página vou atualizando conforme vou finalizando os challenges, citando el
 #### App - System
 #### Cracking
 #### Cryptanalysis
+- [Encoding - ASCII](https://0xnymerio.github.io/ctf-rootme-cryptanalysis-encoding_ascii)
+
 #### Forensic
 #### Network
 - [FTP - authentication](https://0xnymerio.github.io/ctf-rootme-network-ftp_authentication)
