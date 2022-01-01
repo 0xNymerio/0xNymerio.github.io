@@ -48,7 +48,6 @@ Novamente, o fluxo é simples: Para cada palavra na wordlist __rockyou__, concat
 
 ~~~ python
 import hashlib
-import base64
 
 wordlist = "/usr/share/wordlists/rockyou.txt"
 hash_alvo = "4ddd4137b84ff2db7291b568289717f0"
