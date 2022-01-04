@@ -28,7 +28,8 @@ Nessa página vou atualizando conforme vou finalizando os challenges, citando el
 - [Encoding - ASCII](https://0xnymerio.github.io/ctf-rootme-cryptanalysis-encoding_ascii)
 - [Encoding - UU](https://0xnymerio.github.io/ctf-rootme-cryptanalysis-encoding_uu)
 - [HASH - DCC](https://0xnymerio.github.io/ctf-rootme-cryptanalysis-hash_dcc)
-
+- [HASH - DCC2](https://0xnymerio.github.io/ctf-rootme-cryptanalysis-hash_dcc2)
+  
 #### Forensic
 #### Network
 - [FTP - authentication](https://0xnymerio.github.io/ctf-rootme-network-ftp_authentication)
