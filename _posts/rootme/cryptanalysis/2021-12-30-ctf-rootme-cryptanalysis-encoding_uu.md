@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[CTF]-[ROOT-ME]-[CHALLENGES]-[CRYPTANALYSIS] - Encoding - UU"
-date: 2021-12-31
+date: 2021-12-30
 excerpt: "Challenge Encoding - UU - Root-me.org"
 tags: [ctf, rootme, cryptanalysis, challenge]
 ---

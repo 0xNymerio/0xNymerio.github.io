@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[CTF]-[ROOT-ME]-[CHALLENGES]-[CRYPTANALYSIS] - Hash - DCC2"
-date: 2021-12-31
+date: 2022-01-02
 excerpt: "Challenge Hash - DCC2 - Root-me.org"
 tags: [ctf, rootme, cryptanalysis, challenge]
 ---

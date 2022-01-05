@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[CTF]-[ROOT-ME]-[CHALLENGES]-[CRYPTANALYSIS] - Encoding - ASCII"
-date: 2021-12-31
+date: 2021-12-30
 excerpt: "Challenge Encoding - ASCII - Root-me.org"
 tags: [ctf, rootme, cryptanalysis, challenge]
 ---
