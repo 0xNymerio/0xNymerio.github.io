@@ -14,6 +14,7 @@ tags: [ctf, rootme, cryptanalysis, challenge]
 ## Hash - LM
 
 Another day, another hash. mas dessa vez um hash __LM__. O desafio nos fornece uma saida do __secretsdump__, temos que identificar a hash e quebra-la. 
+
 ```
 [*] Dumping local SAM hashes (uid:rid:lmhash:nthash)
 Administrator:500:d3bf255c530633b9aad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::

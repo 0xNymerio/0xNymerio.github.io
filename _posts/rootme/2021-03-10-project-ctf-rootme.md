@@ -31,7 +31,8 @@ Nessa página vou atualizando conforme vou finalizando os challenges, citando el
 - [HASH - DCC2](https://0xnymerio.github.io/ctf-rootme-cryptanalysis-hash_dcc2)
 - [HASH - LM](https://0xnymerio.github.io/ctf-rootme-cryptanalysis-hash_lm)
 - [HASH - Message Digest 5](https://0xnymerio.github.io/ctf-rootme-cryptanalysis-hash_message_digest_5)
-    
+- [HASH - SHA-2](https://0xnymerio.github.io/ctf-rootme-cryptanalysis-hash_sha2)
+      
 #### Forensic
 #### Network
 - [FTP - authentication](https://0xnymerio.github.io/ctf-rootme-network-ftp_authentication)
