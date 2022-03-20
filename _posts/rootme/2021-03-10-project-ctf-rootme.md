@@ -33,6 +33,7 @@ Nessa página vou atualizando conforme vou finalizando os challenges, citando el
 - [HASH - Message Digest 5](https://0xnymerio.github.io/ctf-rootme-cryptanalysis-hash_message_digest_5)
 - [HASH - SHA-2](https://0xnymerio.github.io/ctf-rootme-cryptanalysis-hash_sha2)
 - [SHIFT CIPHER](https://0xnymerio.github.io/ctf-rootme-cryptanalysis-shift-cipher)
+- [CISCO - Stalted Password](https://0xnymerio.github.io/ctf-rootme-cryptanalysis-cisco-salted-password)
       
 #### Forensic
 #### Network
