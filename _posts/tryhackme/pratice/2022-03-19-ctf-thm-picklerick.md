@@ -17,11 +17,11 @@ Link do [Pickle Rick](https://tryhackme.com/room/picklerick).
 
 ## Execução
 
-Eu não curto máquina temática, fica muito __guessing__ ou o desafio consiste em juntar as pistas e automaticamente vc segue um único fluxo e "owna a máquina" (muitas aspas). No nossa caso, é a segunda opção, então vamos coletar e mapear as evidências e naturalmente o desafio nos vai fornecendo users/senhas/artificios para avançarmos.
+Eu não curto máquina temática, fica muito __guessing__ ou o desafio consiste em juntar as pistas e automaticamente vc segue um único fluxo e "owna a máquina" (muitas aspas). No nossa caso, é a segunda opção, então vamos coletar e mapear as evidências e naturalmente o desafio vai nos fornecendo users/senhas/artificios para avançarmos.
 
 Como sempre, começamos por pela etapa de **Information Gathering/Scanning**.
 
-Ultimamente estou na velocidade da luz pra scanning, zero stealth + __--min-rate 200__ pra ctfs, então bora agilizar! Executo o __nmap__ em todas as portas, mas apenas há as seguintes portas abertas: __22 e 80__. Já aproveitei e levantei os serviços e versões, o apache chama atenção, mas como é um ctf __easy__ vou continuar enumerando.
+Ultimamente estou na velocidade da luz pra scanning, zero stealth + __--min-rate 200__ pra ctfs, então bora agilizar! Executo o __nmap__ em todas as portas mas há apenas as seguintes portas abertas: __22 e 80__. Já aproveitei e levantei os serviços e versões, o apache chama atenção, mas como é um ctf __easy__ vou continuar enumerando.
 
 ![nmap](/img_posts/ctf/tryhackme/pratice/picklerick/nmap.png)
 
@@ -41,7 +41,7 @@ Utilizei o __gobuster__ para enumerar os diretórios utilizando uma wordlist cur
 
 ![gobuster](/img_posts/ctf/tryhackme/pratice/picklerick/gobuster.png)
 
-Acessando o robots.txt conseguimos a string __Wubbalubbadubdub__. Ao acessarmos o __login.php__ encontramos um formulário de autenticação. Testei credenciais padrões como __admin, administrator, root, rick, picklerickle e R1ckRul3s__ para entender o comportamento da aplicação, mas sem diferença de resposta.
+Acessando o __robots.txt__ conseguimos a string __Wubbalubbadubdub__. Ao acessarmos o __login.php__ encontramos um formulário de autenticação. Testei credenciais padrões como __admin, administrator, root, rick, picklerickle e R1ckRul3s__ para entender o comportamento da aplicação, mas sem diferença de resposta.
 
 ![login](/img_posts/ctf/tryhackme/pratice/picklerick/login-page.png)
 
@@ -61,7 +61,7 @@ Decidi enumerar o alvo pela própria aplicação, portanto meu primeiro passo é
 
 ![no cat](/img_posts/ctf/tryhackme/pratice/picklerick/restrict-cat.png)
 
-No diretório __/home__ há dois usuários, __rick__ e __ubuntu__, então vou enumerar as permissões do meu usuário atual. Utilizei o __find__ para procurar binários com o __suid__ ativo, mas sem sucesso, então mandei o CLÁSSICO __sudo -l__ e tcharam, nosso user consegue executar com permissaão root ao utilizar o sudo. Agora é só encontrar as flags dentro da máquina!
+No diretório __/home__ há dois usuários, __rick__ e __ubuntu__, então vou enumerar as permissões do meu usuário atual. Utilizei o __find__ para procurar binários com o __suid__ ativo, mas sem sucesso, então mandei o CLÁSSICO __sudo -l__ e tcharam, nosso user consegue executar com permissões __root__ ao utilizar o sudo. Agora é só encontrar as flags dentro da máquina!
 
 ![sudo](/img_posts/ctf/tryhackme/pratice/picklerick/permissions.png)
 
