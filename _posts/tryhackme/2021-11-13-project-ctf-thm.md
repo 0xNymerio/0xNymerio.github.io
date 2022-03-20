@@ -29,5 +29,7 @@ Todas as salas "individuais" vou postar aqui nessa seção e caso ela esteja den
 
 ### Easy
 * [Bounty Hacker](https://0xnymerio.github.io/ctf-thm-bountyhacker)
+* [Pickle Rick](https://0xnymerio.github.io/ctf-thm-picklerick)
+   
 
 
