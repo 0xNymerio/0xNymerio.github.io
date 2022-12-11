@@ -6,22 +6,22 @@ date: 2021-03-12
 comments: false
 ---
 
-<center>Respiro tecnologia todo santo dia, o melhor suco de limão da região e desde 2017 que tenho me apaixonado por cybersecurity. Atualmente me preparando pra certificações de Pentest (DCPT, eJPT e OSCP).
+<center>Respiro tecnologia todo santo dia, o melhor suco de limão da região e desde 2017 que tenho me apaixonado por cybersecurity. Atualmente trabalho na área de segurança (engenharia/blueteam) mas meu objetivo é trabalhar em Red Team! Atualmente me preparando para as certificações: DCPT, eJPT e OSCP).
 
 <figure>
 	<a href="https://0xnymerio.github.io/about/001-profile_bits.png"><img src="https://0xnymerio.github.io/about/001-profile_bits.png"></a>
-	<figcaption>Entre em contato comigo pelo Telegram: <a href="https://t.me/tcgomes" title="Eu mesmo, nice!">@tcgomes</a>.</figcaption>
+	<figcaption>Entre em contato comigo pelo Telegram: <a href="https://t.me/xNymerio" title="Eu mesmo, nice!">@xNymerio</a>.</figcaption>
 </figure></center>
 
 ## Softskills
 * `Melhor suco de limão`  ------> Só pra reforçar :D
 * `Lime Iced Tea is my passion` ------> Nice!
-* `Ética no trabalho` ------> infosec sem ética = treta.
+* `Ética no trabalho` ------> infosec sem ética é né 🤡.
 * `Comunicação eficaz` ------> Nada melhor que um email ou 5 minutos de papo, faz toda a diferença!
 * `Oratória, Narrativa e Habilidades de Escrita` ------> Narrador de rpg há eras! Curta o [Beyond a Joke](https://www.youtube.com/playlist?list=PLVeCTVPQ8q7_WFMF6vM_sS6fUrj8HmrHW).
-* `Apoio os movimentos contra atividades repetitivas em TI` ------> Nada que um script não resolva e automatize a parada.
-* `Gestão de Tempo` ------> Notion for the win
-*  `Keeplearning` ------> Não tem como fugir da multidisciplinaridade da área de TI como um todo, quem dirá então de cybersecurity que sai uma CVE a cada 3 semanas.
+* `Apoio os movimentos contra atividades repetitivas em TI` ------> Nada que um script não resolva e automatize a parada, mas com (consciência)[https://xkcd.com/1319/]!.
+* `Gestão de Tempo` ------> Oblivion + Pomodoro for the win
+* `Keeplearning` ------> Se você quer ser competitivo e não apenas repetir scripts, terá de gastar **HorasBunda** e estudar.
 * `Criatividade e Inovação` ------> Quer mais criativo que essa intro de softskills?
 
 <center> Para informações mais tradicionais, só visitar meu <a href="https://www.linkedin.com/in/tuliocgomes/">Linkedin</a>
@@ -29,7 +29,7 @@ comments: false
 
 
 ## Livros que me inspiram
-VÁÁÁÁÁRIOS, principalmente os técnicos, mas para um review decente, só posso dizer o seguinte: <b>Em breve...</b>
+Confira (aqui)[https://0xnymerio.github.io/project-books]!
 
 ## Vida Pessoal
 * Nope.
@@ -45,4 +45,4 @@ Por mais incrivel que pareça, meu `MAIOR VICIO É ESTUDAR`, juro pra você. A c
 * [LOFI](https://www.youtube.com/watch?v=hHW1oY26kxQ){: .btn}
 * [Street Food](https://www.youtube.com/watch?v=65rxBoi74C8&list=PLX-TA2Xezeas0dLukRe1I-Flul1JE96oa){: .btn}
 
- `A Tribo cuida da Tribo.`
+ `Hack the Planet!`
