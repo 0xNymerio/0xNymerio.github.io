@@ -48,6 +48,7 @@ Nessa página vou atualizando conforme vou finalizando os challenges, citando el
 - [SIP - Authentication](https://0xnymerio.github.io/ctf-rootme-network-sip_authentication)
 - [LDAP - Null Bind](https://0xnymerio.github.io/ctf-rootme-network-ldap_null_bind)
 - [POP - APOP](https://0xnymerio.github.io/ctf-rootme-network-pop_apop)
+- [SSL - HTTP Exchange](https://0xnymerio.github.io/ctf-rootme-network-ssl_http_exchange)
   
 #### Programming
 #### Realistic
