@@ -16,7 +16,7 @@ comments: false
 ## Softskills
 * `Melhor suco de limão`  ------> Só pra reforçar :D
 * `Lime Iced Tea is my passion` ------> Nice!
-* `Ética no trabalho` ------> infosec sem ética é né 🤡.
+* `Ética no trabalho` ------> infosec sem ética é 🤡.
 * `Comunicação eficaz` ------> Nada melhor que um email ou 5 minutos de papo, faz toda a diferença!
 * `Oratória, Narrativa e Habilidades de Escrita` ------> Narrador de rpg há eras! Curta o [Beyond a Joke](https://www.youtube.com/playlist?list=PLVeCTVPQ8q7_WFMF6vM_sS6fUrj8HmrHW).
 * `Apoio os movimentos contra atividades repetitivas em TI` ------> Nada que um script não resolva e automatize a parada, mas com (consciência)[https://xkcd.com/1319/]!.
@@ -29,7 +29,7 @@ comments: false
 
 
 ## Livros que me inspiram
-Confira (aqui)[https://0xnymerio.github.io/project-books]!
+Confira [aqui](https://0xnymerio.github.io/project-books)!
 
 ## Vida Pessoal
 * Nope.
