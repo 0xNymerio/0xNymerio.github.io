@@ -19,7 +19,7 @@ comments: false
 * `Ética no trabalho` ------> infosec sem ética é 🤡.
 * `Comunicação eficaz` ------> Nada melhor que um email ou 5 minutos de papo, faz toda a diferença!
 * `Oratória, Narrativa e Habilidades de Escrita` ------> Narrador de rpg há eras! Curta o [Beyond a Joke](https://www.youtube.com/playlist?list=PLVeCTVPQ8q7_WFMF6vM_sS6fUrj8HmrHW).
-* `Apoio os movimentos contra atividades repetitivas em TI` ------> Nada que um script não resolva e automatize a parada, mas com [consciência](https://xkcd.com/1319/)!.
+* `Apoio os movimentos contra atividades repetitivas em TI` ------> Nada que um script não resolva e automatize a parada, mas com [consciência](https://xkcd.com/1319/)!
 * `Gestão de Tempo` ------> Oblivion + Pomodoro for the win
 * `Keeplearning` ------> Se você quer ser competitivo e não apenas repetir scripts, terá de gastar **HorasBunda** e estudar.
 * `Criatividade e Inovação` ------> Quer mais criativo que essa intro de softskills?
