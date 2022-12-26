@@ -166,13 +166,13 @@ Lista de softwares no compartilhamento **support-tools**
 
 ![Softwares - support-tools](/img_posts/ctf/htb/easy/support/htb-support-1.png)
 
-Todos os softwares são conhecidos, exceto o UserInfo. Utilizando o wine, é possivel entender e executar o mesmo, porém ao utilizar as funções find e user ele não opera corretamente. Com base nas informações apresentadas, fica claro que o executavel tenta coletar informações de usuário do DC por estar em uma pasta compartilhada com softwares utilizados por sysadmin.
+Todos os softwares são conhecidos, exceto o **UserInfo**. Utilizando o wine, é possivel entender e executar o mesmo, porém ao utilizar as funções **find** e **user** ele não opera corretamente. Com base nas informações apresentadas, fica claro que o executavel tenta coletar informações de usuário do DC por estar em uma pasta compartilhada com softwares utilizados por sysadmin.
 
 ![Userinfo.exe - support-tools](/img_posts/ctf/htb/easy/support/htb-support-2.png)
 
 # Reverse Eng 
 
-Observando o executavel, é possivel identificar as funções: FindUser e GetUser.
+Observando o executavel, é possivel identificar as funções: **FindUser** e **GetUser**.
 
 ![UserInfo.exe](/img_posts/ctf/htb/easy/support/htb-support-3.png)
 
@@ -244,6 +244,7 @@ Abaixo consta a etapa de enumeração realizada sobre o protocolo LDAP  com o us
 
 ### Users
 Abaixo os usuários enumerados pela query ldap, sendo então novos vetores de ataque:
+
 ``` users enumerated
 ford.victoria
 stoll.rachelle
@@ -272,6 +273,7 @@ O usuário **support** possui a propriedade "Password Never Expires" **habilitad
 
 ### Computers
 Abaixo os computers enumerados pela query ldap:
+
 | CN         | SAM Name    | DNS Hostname           | OS                           |
 | ---------- | ----------- | ---------------------- | ---------------------------- |
 | MANAGEMENT | MANAGEMENT$ | Management.support.htb | Windows 10 Pro               |
@@ -280,6 +282,7 @@ Abaixo os computers enumerados pela query ldap:
 
 ### Domain Policy
 Abaixo só foi possivel visualizar uma única politica habilitada, sendo então das propriedades da password. 
+
 | DN  | Lock Duration | Max password Age | Min password Length | Password properties |
 | --- | ------------- | ---------------- | ------------------- | ------------------- |
 | DC=support,DC=htb    | 30 Minutes  |   1000000000 Days | 7 |  PASSWORD_COMPLEX|
