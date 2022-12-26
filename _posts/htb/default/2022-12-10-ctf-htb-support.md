@@ -356,21 +356,6 @@ Utilizando utilizando a hash do objeto, solicita-se ao dc.support.htb um novo **
 
 ![Decrypt Pass](/img_posts/ctf/htb/easy/support/htb-support-18.png)
 
-
-# Security Controls
-Abaixo consta alguns dos controles segurança aplicados no ambiente e qual o seu comportamento.
-
-## Bruteforce
-Realizando bruteforce smbv2 para a lista de usuários enumerada pelo LDAP no item XXX.
-
-![Decrypt Pass](/img_posts/ctf/htb/easy/support/htb-support-19.png)
-
-No teste realizado, não foi possivel obter qualquer credencial e não houve o bloqueio de tantas requisições falhas.
-
-![Decrypt Pass](/img_posts/ctf/htb/easy/support/htb-support-20.png)
-
-![Decrypt Pass](/img_posts/ctf/htb/easy/support/htb-support-21.png)
-
 # References
 -  https://shenaniganslabs.io/2019/01/28/Wagging-the-Dog.html
 -  https://book.hacktricks.xyz/windows-hardening/active-directory-methodology/resource-based-constrained-delegation
