@@ -266,10 +266,10 @@ support
 
 A propriedade "Password Never Expires" está **habilitada** para todos os usuários do domínio.
 
-![Decrypt Pass](/img_posts/ctf/htb/easy/support/htb-support-5.png)
+![Passwd never expires](/img_posts/ctf/htb/easy/support/htb-support-5.png)
 
 O usuário **support** possui a propriedade "Password Never Expires" **habilitada** e o mesmo está no grupo **Remote Management Users**, o qual é utilizado para permitir que os usuários gerenciem servidores por meio do console do Gerenciador do Servidor. Desta forma, pode-se abusar do **WinRM** para executar comandos Powershell.
-![Decrypt Pass](/img_posts/ctf/htb/easy/support/htb-support-6.png)
+![WinRM Users](/img_posts/ctf/htb/easy/support/htb-support-6.png)
 
 ### Computers
 Abaixo os computers enumerados pela query ldap:
@@ -289,43 +289,43 @@ Abaixo só foi possivel visualizar uma única politica habilitada, sendo então 
 
 Através da enumeração dos usuários ldap, é possivel identificar o padrão de email utilizando na instituição, sendo USER.NAME@support.htb. Também é possivel coletar o endereço da empresa: Chapel Hill, NC - USA.
 
-![Decrypt Pass](/img_posts/ctf/htb/easy/support/htb-support-7.png)
+![Ford Victoria User/Email](/img_posts/ctf/htb/easy/support/htb-support-7.png)
 
 Dos usuários enumerados, a única informação diferente dos demais é que o usuário **support** possui uma propriedade adicional ao realizar a query ldap, sendo `info: Iron[REDATEC]ful`.
 
 `ldapsearch -x -b "dc=support,dc=htb" -H ldap://support.htb -D "support\ldap" -w 'nvEf[REDACTED]lmz' 'cn=support'`
 
-![Decrypt Pass](/img_posts/ctf/htb/easy/support/htb-support-8.png)
+![User Support](/img_posts/ctf/htb/easy/support/htb-support-8.png)
 
 ### Disclamer importante
 Como este cenário se baseia em um ambiente controlado, toda e qualquer pista será utilizada como valor para melhorar a etapa de enumeração. Dado o valor de **info** do usuário support **ser** o unico ponto de diferença dos demais usuários, a string `Iron[REDATEC]ful` foi utilizada para validar acesso a conta, tendo seu resultado positivo.
 
-![Decrypt Pass](/img_posts/ctf/htb/easy/support/htb-support-9.png)
+![SMB Shares](/img_posts/ctf/htb/easy/support/htb-support-9.png)
 
 # Foothold
 Abaixo consta os passos utilizados para ganhar acesso ao alvo após o compromentimento da credencial do usuário **support**.
 
 Foi estabelecido conexão shell no alvo via WinRM: `evil-winrm -u 'support' -p 'Iron[REDACTED]ful' -i 10.10.11.174`. Abaixo está a evidência.
 
-![Decrypt Pass](/img_posts/ctf/htb/easy/support/htb-support-10.png)
+![Evil-WinRM](/img_posts/ctf/htb/easy/support/htb-support-10.png)
 
 ## Enumeration - BloodHound
 Em busca de missconfigurations no ambiente do AD, o bloodhound auxilia esta etapa de enumeração e é possivel encontrar o caminho mais rápido e acessivel para se tornar Domain Admin.
 
 Para utilizar o bloodhound, é necessário possuir uma credencial válida, sendo então utilizado o usuário o support. Abaixo consta os resultados obtidos pela ferramenta.
 
-![Decrypt Pass](/img_posts/ctf/htb/easy/support/htb-support-11.png)
+![Collect Bloodhound data](/img_posts/ctf/htb/easy/support/htb-support-11.png)
 
 Ao observar os dados coletados pelo BloodHound, o usuário support possui permissão GerenicAll no grupo **Shared Support Accounts**. 
 
 - **GenericAll**: Permissão total no objeto, como adicionar usuários ou alterar passwords.
 - 
-![Decrypt Pass](/img_posts/ctf/htb/easy/support/htb-support-12.png)
+![Bloodhound permissions](/img_posts/ctf/htb/easy/support/htb-support-12.png)
 
 Dado esta missconfiguration, todo membro do grupo possui permissão total desse objeto do Domain Controller. Como referencia do BloodHound, pode-se realizar um **Kerberos Resource-based Constrained Delegation** e  realizar o Take Over do objeto Computer.
 
 
-![Decrypt Pass](/img_posts/ctf/htb/easy/support/htb-support-13.png)
+![GenricAll - Abuse Info](/img_posts/ctf/htb/easy/support/htb-support-13.png)
 
 # Privilege Escalation
 Após efetuado o primeiro acesso com baixos privilégios, nosso objetivo é possuir o poder de Domain Admin e comprometer todo o Domínio Support.HTB.
@@ -337,24 +337,24 @@ Para auxiliar na fase de exploração, será utilizado modulos auxiliares para o
 - Import-Module (Resolve-Path('Powermad.ps1'))
 - Import-Module (Resolve-Path('PowerView.ps1'))
 
-![Decrypt Pass](/img_posts/ctf/htb/easy/support/htb-support-14.png)
+![Weaponization - Rubeos](/img_posts/ctf/htb/easy/support/htb-support-14.png)
 
 Adicionando um novo **Computer Object** chamado **Nym-Machine**, o qual será atribuido o estado de **trusted** pelo nosso alvo.
 `New-MachineAccount -MachineAccount Nym-Machine -Password $(ConvertTo-SecureString 'nym123' -AsPlainText -Force) -Verbose`
 
-![Decrypt Pass](/img_posts/ctf/htb/easy/support/htb-support-15.png)
+![Add Nym-Machine](/img_posts/ctf/htb/easy/support/htb-support-15.png)
 
 Foi configurado o **resource-based constrained delegation** do DC para o Computer Object **Nym-Machine**.
 
-![Decrypt Pass](/img_posts/ctf/htb/easy/support/htb-support-16.png)
+![Config Resource-Based Constrained Delegation](/img_posts/ctf/htb/easy/support/htb-support-16.png)
 
 Utilizado o Rubeus para capturar as hashes da password do objeto **Nym-Machine**.
 
-![Decrypt Pass](/img_posts/ctf/htb/easy/support/htb-support-17.png)
+![Rubeos in Action](/img_posts/ctf/htb/easy/support/htb-support-17.png)
 
 Utilizando utilizando a hash do objeto, solicita-se ao dc.support.htb um novo **Kerberos Ticket-Granting-Ticket** (TGT) enquanto representa o user Administrator, então utiliza-se o mesmo para requisitar um serviço após a coleta do TGT. Foi possivel obter acesso ao Domain Controle sobre privilégios **NT/System** conforme evidência abaixo.
 
-![Decrypt Pass](/img_posts/ctf/htb/easy/support/htb-support-18.png)
+![TGT to NT/System](/img_posts/ctf/htb/easy/support/htb-support-18.png)
 
 # References
 -  https://shenaniganslabs.io/2019/01/28/Wagging-the-Dog.html
