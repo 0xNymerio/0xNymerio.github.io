@@ -2,7 +2,7 @@
 layout: post
 title: "[CTF]-[HACKTHEBOX]-[EASY]- SUPPORT"
 date: 2022-12-10
-excerpt: "Machine: Support - [Root-me.org](https://www.hackthebox.com)"
+excerpt: "Machine: Support - [hackthebox.com](https://www.hackthebox.com)"
 tags: [ctf, htb, windows, kerberos resource delegation, reverse eng]
 ---
 

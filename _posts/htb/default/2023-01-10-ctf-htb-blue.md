@@ -2,7 +2,7 @@
 layout: post
 title: "[CTF]-[HACKTHEBOX]-[EASY]- BLUE"
 date: 2023-01-10
-excerpt: "Machine: Support - [Root-me.org](https://www.hackthebox.com)"
+excerpt: "Machine: Support - [hackthebox.com](https://www.hackthebox.com)"
 tags: [ctf, htb, windows, eternal blue, manual exploit, exploit, python, venv]
 ---
 
