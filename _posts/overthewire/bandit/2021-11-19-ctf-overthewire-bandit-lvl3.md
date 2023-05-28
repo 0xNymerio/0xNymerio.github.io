@@ -21,7 +21,7 @@ Apesar de uma longa explicação dos parâmetros do __ls__, já sabemos que o ar
 
 Todo arquivo oculto em linux/unix começa com __.__ (ponto), a fim de simbolizar que é um arquivo oculto. Para ler o arquivo, se atentar de inserir o nome completo, no caso: __.hidden__.
 
-![Utilizando ls \\](/img_posts/ctf/overthewire/bandit/lvl3/lvl3-1.png)
+![Utilizando ls \\](/img_posts/ctf/overthewire/bandit/lvl3-1.png)
 
 ### Bandit3 - Solução 2 
 
@@ -29,4 +29,4 @@ Essa solução é mais sofisticada, mas apenas por um motivo: caso nós _não_ s
 
 > $ find inhere\ -name ".*" -print
 
-![Utilizando find \\](/img_posts/ctf/overthewire/bandit/lvl3/lvl3-2.png)
+![Utilizando find \\](/img_posts/ctf/overthewire/bandit/lvl3-2.png)

@@ -18,7 +18,7 @@ Podemos utilizar o __cat__ para ler o arquivo, porém ele interpreta a leitura d
 
 > $ cat ./-
 
-![Utilizando o cat - v1](/img_posts/ctf/overthewire/bandit/lvl1/lvl1-1.png)
+![Utilizando o cat - v1](/img_posts/ctf/overthewire/bandit/lvl1-1.png)
 
 ### Bandit1 - Solução 2 
 
@@ -26,6 +26,6 @@ Ainda utilizando o __cat__, outra maneira é utilizando o operador de redirecion
 
 > $ cat < -
 
-![Utilizando o cat - v2](/img_posts/ctf/overthewire/bandit/lvl1/lvl1-2.png)
+![Utilizando o cat - v2](/img_posts/ctf/overthewire/bandit/lvl1-2.png)
 
 
