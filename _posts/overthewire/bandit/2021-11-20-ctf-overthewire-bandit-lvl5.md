@@ -30,4 +30,4 @@ Com as peças identificadas, só nos resta unir os parametros em um unico argume
 
 > $ find inhere/ -readable \! executable -size 1033c
 
-![Utilizando file \\](/img_posts/ctf/overthewire/bandit/lvl5-1.png)
+![Utilizando find](/img_posts/ctf/overthewire/bandit/lvl5-1.png)

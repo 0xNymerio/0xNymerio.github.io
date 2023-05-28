@@ -24,6 +24,6 @@ Em um shell que não possui interação, utilizar o caractere \ para realizar o 
 
 > $ cat spaces\ in\ this\ filename
 
-![Utilizando o cat + escape \\](/img_posts/ctf/overthewire/bandit/lvl2-1.png)
+![Utilizando o cat + escape](/img_posts/ctf/overthewire/bandit/lvl2-1.png)
 
 

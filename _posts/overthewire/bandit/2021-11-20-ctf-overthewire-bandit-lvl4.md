@@ -18,4 +18,4 @@ Utilizando o __file__, podemos inspecionar os headers dos arquivos. Conforme na 
 
 > $ file inhere/*
 
-![Utilizando file \\](/img_posts/ctf/overthewire/bandit/lvl4-1.png)
+![Utilizando file](/img_posts/ctf/overthewire/bandit/lvl4-1.png)

@@ -32,4 +32,4 @@ Fácil fácil, olhando no manual novamente, `-user` para especificar o owner do 
 
 > $ find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
 
-![Utilizando file \\](/img_posts/ctf/overthewire/bandit/lvl6-1.png)
+![Utilizando find](/img_posts/ctf/overthewire/bandit/lvl6-1.png)

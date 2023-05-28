@@ -29,4 +29,4 @@ Essa solução é mais sofisticada, mas apenas por um motivo: caso nós _não_ s
 
 > $ find inhere\ -name ".*" -print
 
-![Utilizando find \\](/img_posts/ctf/overthewire/bandit/lvl3-2.png)
+![Utilizando find](/img_posts/ctf/overthewire/bandit/lvl3-2.png)
